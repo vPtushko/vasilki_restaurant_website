@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Vasil'ki</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="logo">
+          <a class="logo_" href="index.html">Vasil'ki</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="special.html">Special</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="nav__btn">
+        <button class="btn"><i class="ri-shopping-bag-fill"></i></button>
+      </div>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.jpg" alt="picture of food"/>
+      </div>
+      <div class="header__content">
+        <h1>Meet, Eat & Enjoy The <span>True Taste</span>.</h1>
+        <p class="section__description">
+          Discover the true essence of Belarusian cuisine by meeting, eating and
+          savouring the authentic flavours that define our passion for food.
+        </p>
+        <div class="header__btn">
+          <button class="btn">Get Started</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">Explore Our Atmosphere</h2>
+      <p class="section__description">
+        Explore our cozy restaurant, where warm lighting, inviting decor, 
+        and the aroma of freshly prepared dishes create a relaxing escape. 
+        Whether you're sharing a meal with loved ones or enjoying a quiet moment, our welcoming atmosphere makes every visit unforgettable.
+      </p>
+      <div class="swiper_container">
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="assets/slide1.jpg" class="slide_1" alt="restaurant inside">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/slide2.jpg" class="slide_2" alt="table with different dishes">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/slide3.jpg" class="slide_3" alt="restaurant inside">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h4>Work Hours </h4>
+          <table border="0" >
+            <tr>
+              <td>Monday</td>
+              <td>Closed</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>10:00 - 20:00</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>10:00 - 20:00</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>10:00 - 20:00</td>
+            </tr>
+            <tr>
+              <td>Friday-Sunday</td>
+              <td>10:00 - 23:00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer__col">
+          <h4>Location</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0925416845607!2d-73.9800542!3d40.75998930000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f9289291b1%3A0x9990d047d530bf5f!2sShowplace%20of%20the%20Nation%2C%201260%206th%20Ave%2C%20New%20York%2C%20NY%2010020!5e0!3m2!1sen!2sus!4v1734391081026!5m2!1sen!2sus" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>

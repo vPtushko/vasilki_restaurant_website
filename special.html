@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>Vasil'ki</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <a href="index.html">Vasil'ki</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links nav" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="special.html">Special</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+          <button class="clear-cart btn btn-danger">Clear Cart</button>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+              
+            </table>
+            <div>Total price: $<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--Main-->
+    <section class="section__container special__container" id="special">
+        <h2 class="section__header">Our Special Dish</h2>
+        <p class="section__description">
+          Each dish promises an unforgettable dining experience, blending
+          innovation with tradition to delight your senses.
+        </p>
+        <div class="special__grid">
+          <div class="special__card">
+            <img src="assets/special-1.jpg" alt="special" />
+            <h4 class="card-title">Draniki</h4>
+            <p>
+              Draniki are made by mixing 
+              shredded potatoes with egg, and flour, then 
+              frying on both sides until crispy. Topped with sour cream
+            </p>
+            <div class="special__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <div class="special__footer">
+              <p class="price">$12.50</p>
+              <button type="button" class="add-to-cart btn btn-primary" data-name="Draniki" data-price="12.50">Add to Cart</button>
+            </div>
+          </div>
+          <div class="special__card">
+            <img src="assets/special-2.jpg" alt="special" />
+            <h4 class="card-title">Kletski</h4>
+            <p>
+              Kletski tasty and comforting potato dumplings filled with pork and onions.
+              Topped with sour cream and glass of cold milk
+            </p>
+            <div class="special__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <div class="special__footer">
+              <p class="price">$18.50</p>
+              <button class="btn add-to-cart btn-primary" data-name="Kletski" data-price="18.50" >Add to Cart</button>
+            </div>
+          </div>
+          <div class="special__card">
+            <img src="assets/special-3.jpg" alt="special" />
+            <h4 class="card-title">Kholodnik</h4>
+            <p>
+              Kholodnik is a cold soup made from beets, nettles and sorrel. 
+              Topped with sour cream and black bread
+            </p>
+            <div class="special__ratings">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+            </div>
+            <div class="special__footer">
+              <p class="price">$15.50</p>
+              <button class="btn add-to-cart btn-primary" data-name="Kholodnik" data-price="15.50">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul class="footer__links">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Meal Deals</a></li>
+            <li><a href="#">Catering Options</a></li>
+            <li><a href="#">Seasonal Offerings</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Information</h4>
+          <ul class="footer__links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Nutrition Information</a></li>
+            <li><a href="#">Allergen Information</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="assets/shop.js"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
